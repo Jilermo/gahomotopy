@@ -1,0 +1,20 @@
+# Service: Evaluate a single EHPPM configuration and return fitness.
+# The GA node calls this service for each candidate solution.
+
+# --- Request: same fields as EhppmParams ---
+geometry_msgs/Point start
+geometry_msgs/Point goal
+gahomotopy_msgs/Obstacle[] obstacles
+float64 radius
+float64[] obstacle_values
+int32[] obstacle_signs
+float64[] a_matrix
+int32 num_var
+string robot_type
+int32 max_steps
+---
+# --- Response ---
+float64 fitness             # 1 / (path_distance + epsilon)
+bool success                # true if path reached goal
+float64 path_distance       # total path distance
+float64 final_lambda        # final homotopy parameter

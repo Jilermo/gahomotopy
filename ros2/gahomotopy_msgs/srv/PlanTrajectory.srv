@@ -1,0 +1,13 @@
+# Service: Request trajectory planning from the GA node.
+# The GA node receives the scenario and runs optimization using its
+# configured parameters (loaded from YAML at startup).
+
+# --- Scenario ---
+geometry_msgs/Point start
+geometry_msgs/Point goal
+gahomotopy_msgs/Obstacle[] obstacles
+string experiment_name            # label for this run
+---
+# --- Result ---
+bool success                      # true if a valid path was found
+gahomotopy_msgs/TrajectoryResult trajectory

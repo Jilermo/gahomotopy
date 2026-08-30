@@ -1,0 +1,1 @@
+"""Visualization modules — arm and trajectory rendering."""

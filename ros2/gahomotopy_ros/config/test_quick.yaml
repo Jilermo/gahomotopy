@@ -1,0 +1,18 @@
+# Quick test config — minimal GA for fast verification
+ga_planner_node:
+  ros__parameters:
+    num_generations: 2
+    population_size: 3
+    num_parents_mating: 2
+    max_number_of_radius: 5
+    matrix_module: "diagonal_dominant"
+    parallel_mode: "none"
+    robot_type: "roarm_m2"
+    num_segments: 200
+    radius_low: 0.05
+    radius_high: 0.3
+    obstacle_value_low: 100.0
+    obstacle_value_high: 100000.0
+    output_directory: "results"
+    save_npy: true
+    output_filename: ""

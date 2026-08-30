@@ -1,0 +1,21 @@
+# External ROS 2 driver packages (not included in this repository).
+# Clone these into src/ before building:
+#
+#   vcs import src < gahomotopy.repos
+#
+# Or clone manually following the instructions in README.md.
+
+repositories:
+  # UR3e official driver (6-DOF arm, simulation + real hardware)
+  Universal_Robots_ROS2_Driver:
+    type: git
+    url: https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver.git
+    version: jazzy
+
+  # RoArm M2-S driver + description (3-DOF arm)
+  # From Waveshare: https://www.waveshare.com/wiki/RoArm-M2-S
+  # Provides roarm_driver (serial communication) and roarm_description (URDF + RViz)
+  roarm_ws_em0:
+    type: git
+    url: https://github.com/waveshareteam/roarm_ws_em0.git
+    version: main

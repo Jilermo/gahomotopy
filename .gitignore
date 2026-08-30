@@ -1,0 +1,44 @@
+# ROS 2 build artifacts
+build/
+install/
+log/
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Python packaging artifacts
+*.egg-info/
+*.egg-link
+dist/
+
+# Binary files (should not be in git)
+*.so
+*.npy
+*.pkl
+
+# Test/experiment output data
+results/
+*.data.json
+
+# Compiled C++ build directories
+c++/build/
+
+# PDFs (reference docs, not code)
+*.pdf
+
+# IDE / editor garbage
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Quick launch notes (personal)
+quickLaunch.txt

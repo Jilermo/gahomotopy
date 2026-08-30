@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gahomotopy"
+version = "0.1.0"
+description = "Homotopy path planning with genetic algorithm parameter optimization for robotic arms"
+readme = "README.md"
+license = { text = "TODO" }
+authors = [
+    { name = "Guillermo Alfredo García Manjarrez", email = "zS24019403@estudiantes.uv.mx" },
+]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "pygad",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "flake8"]
+
+[tool.setuptools.packages.find]
+include = ["gahomotopy*"]
+
+# Include the C++ source and compiled shared object
+[tool.setuptools.package-data]
+"gahomotopy.kinematics" = ["*.so", "*.cpp", "fast_kinematics_CMakeLists.txt"]
+"gahomotopy.planning" = ["*.npy", "*.json", "*.pkl"]

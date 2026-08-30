@@ -1,0 +1,26 @@
+# Default parameters for the GA Planner node
+# These values match the experiment configuration used in the thesis.
+ga_planner_node:
+  ros__parameters:
+    # --- GA parameters ---
+    num_generations: 50
+    population_size: 20
+    num_parents_mating: 10
+    max_number_of_radius: 10000
+    matrix_module: "diagonal_dominant"    # "diagonal_dominant" | "full_matrix" | "per_row"
+    parallel_mode: "none"                 # "none" | "process N" | "thread N"
+
+    # --- Robot ---
+    robot_type: "roarm_m2"                # "roarm_m2" | "ur3e"
+    num_segments: 200                     # FK discretization segments
+
+    # --- EHPPM search ranges ---
+    radius_low: 0.05
+    radius_high: 0.3
+    obstacle_value_low: 100.0
+    obstacle_value_high: 100000.0
+
+    # --- Output ---
+    output_directory: "results"
+    save_npy: true
+    output_filename: ""             # empty = use experiment_name from service call
