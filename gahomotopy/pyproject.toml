@@ -7,7 +7,7 @@ name = "gahomotopy"
 version = "0.1.0"
 description = "Homotopy path planning with genetic algorithm parameter optimization for robotic arms"
 readme = "README.md"
-license = { text = "TODO" }
+license = { text = "MIT" }
 authors = [
     { name = "Guillermo Alfredo García Manjarrez", email = "zS24019403@estudiantes.uv.mx" },
 ]

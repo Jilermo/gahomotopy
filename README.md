@@ -175,7 +175,7 @@ GA parameters and EHPPM search ranges are configured via YAML. See
 
 ## License
 
-TODO
+MIT — See [LICENSE](LICENSE) for full text.
 
 ## Author
 

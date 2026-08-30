@@ -5,7 +5,7 @@
   <version>0.1.0</version>
   <description>Custom messages and services for the gahomotopy ROS 2 package</description>
   <maintainer email="zS24019403@estudiantes.uv.mx">Guillermo Alfredo García Manjarrez</maintainer>
-  <license>TODO</license>
+  <license>MIT</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 

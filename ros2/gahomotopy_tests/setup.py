@@ -16,7 +16,7 @@ setup(
     maintainer='Guillermo Alfredo García Manjarrez',
     maintainer_email='zS24019403@estudiantes.uv.mx',
     description='ROS 2 test and movement utility nodes for the UR3e',
-    license='TODO',
+    license='MIT',
     extras_require={
         'test': ['pytest'],
     },

@@ -5,7 +5,7 @@
   <version>0.1.0</version>
   <description>ROS 2 test and movement utility nodes for the UR3e</description>
   <maintainer email="zS24019403@estudiantes.uv.mx">Guillermo Alfredo García Manjarrez</maintainer>
-  <license>TODO</license>
+  <license>MIT</license>
 
   <depend>rclpy</depend>
   <depend>std_msgs</depend>

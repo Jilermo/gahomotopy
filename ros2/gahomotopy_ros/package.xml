@@ -5,7 +5,7 @@
   <version>0.1.0</version>
   <description>ROS 2 nodes for homotopy path planning with genetic algorithm optimization</description>
   <maintainer email="zS24019403@estudiantes.uv.mx">Guillermo Alfredo García Manjarrez</maintainer>
-  <license>TODO</license>
+  <license>MIT</license>
 
   <depend>rclpy</depend>
   <depend>gahomotopy_msgs</depend>

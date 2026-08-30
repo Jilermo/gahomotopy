@@ -23,7 +23,7 @@ setup(
     maintainer='Guillermo Alfredo García Manjarrez',
     maintainer_email='zS24019403@estudiantes.uv.mx',
     description='ROS 2 nodes for homotopy path planning with genetic algorithm optimization',
-    license='TODO',
+    license='MIT',
     extras_require={
         'test': ['pytest'],
     },
