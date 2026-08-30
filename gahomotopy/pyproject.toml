@@ -24,8 +24,3 @@ dev = ["pytest", "flake8"]
 
 [tool.setuptools.packages.find]
 include = ["gahomotopy*"]
-
-# Include the C++ source and compiled shared object
-[tool.setuptools.package-data]
-"gahomotopy.kinematics" = ["*.so", "*.cpp", "fast_kinematics_CMakeLists.txt"]
-"gahomotopy.planning" = ["*.npy", "*.json", "*.pkl"]
